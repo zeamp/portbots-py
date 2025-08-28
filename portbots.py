@@ -1,11 +1,13 @@
 # Portbots.py - Multi-IP IRC Botnet Client
 # by Richard Ward (zeamp)
 # How To Run: screen -dm python portbots.py
-#
+# 
 # Portbots.py is a Python-based IRC bot client designed to spawn and manage multiple IRC bots across all available system IP addresses (both IPv4 and IPv6).
 # Each bot runs independently with a unique nickname, ident, and real name, and they collectively connect to an IRC server and coordinate actions inside a designated hub channel.
 # Portbots is primarily a multi-bot management framework for IRC networks, useful for stress-testing, bot orchestration, or experimental distributed coordination.
 # It is configurable and supports large IRC bot counts while respecting clone limits.
+# 
+# Inspired by a Perl script written in the late 1990s by Samy Kamkar (CommPort5).
 
 import socket
 import threading
